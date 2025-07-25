@@ -146,6 +146,9 @@ img {
   }
 
   /*  Banner */
+  .banner{
+    margin: 20px 20px;
+  }
   .banner h2 {
     font-size: 40px;
     font-weight: 700;
