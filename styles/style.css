@@ -21,6 +21,48 @@ img {
   margin: 0 auto;
 }
 
+/* Animation */
+ @keyframes banner-animation {
+  0%{
+     opacity: 0;
+     transform: translateX(-20px);
+  }
+  5%{
+    color: red;
+  }
+
+  50%{
+    opacity: 0.5;
+    color: green;
+     transform: translateX(-10px);
+  }
+
+  100%{
+     opacity: 1;
+      transform: translateX(0px);
+  }
+
+ }
+
+/* banner - player */
+ @keyframes banner-player-animation {
+    0%{
+     opacity: 0.5;
+     transform: translateX(-20px);
+  }
+
+  50%{
+    opacity: 0.7;
+     transform: translateX(-10px);
+  }
+
+  100%{
+     opacity: 1;
+      transform: translateX(0px);
+  }
+  
+ }
+
 /* Banner styles */
 .banner {
   display: flex;
@@ -29,6 +71,8 @@ img {
   color: white;
   border-radius: 30px;
   margin: 50px auto;
+  
+  animation: banner-animation 0.7s ease-out forwards;
 }
 
 .banner-left {
@@ -42,6 +86,7 @@ img {
 
 .banner-right img {
   display: block;
+  animation: banner-player-animation 0.7s ease-in infinite;
 }
 
 .banner h2 {
